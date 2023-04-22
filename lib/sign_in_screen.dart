@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -137,15 +138,17 @@ class _SignInScreenState extends State<SignInScreen> {
                     height: 25,
                   ),
                   //// outline with image button (Google signUp)
+
                   Center(
                     child: SizedBox(
                       width: double.infinity,
                       child: OutlinedButton.icon(
                         style: const ButtonStyle(
-                          iconSize: MaterialStatePropertyAll(45),
+                          iconColor: MaterialStatePropertyAll(Colors.grey),
+                          iconSize: MaterialStatePropertyAll(35),
                         ),
                         icon: const Icon(
-                          Icons.abc,
+                          Icons.email,
                         ),
                         onPressed: () {},
                         label: const Padding(
@@ -160,6 +163,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       ),
                     ),
                   ),
+
                   const SizedBox(
                     height: 20,
                   ),
