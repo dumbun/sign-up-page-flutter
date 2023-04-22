@@ -138,7 +138,6 @@ class _SignInScreenState extends State<SignInScreen> {
                     height: 25,
                   ),
                   //// outline with image button (Google signUp)
-
                   Center(
                     child: SizedBox(
                       width: double.infinity,
@@ -163,7 +162,6 @@ class _SignInScreenState extends State<SignInScreen> {
                       ),
                     ),
                   ),
-
                   const SizedBox(
                     height: 20,
                   ),
@@ -184,6 +182,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                   const SizedBox(height: 10),
                   TextField(
+                    autocorrect: false,
                     decoration: InputDecoration(
                       hintText: 'Leslie Alexander',
                       border: OutlineInputBorder(
@@ -203,6 +202,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                   const SizedBox(height: 10),
                   TextField(
+                    autocorrect: false,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       hintText: 'example@email.com',
@@ -223,6 +223,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                   const SizedBox(height: 10),
                   TextFormField(
+                    autocorrect: false,
                     onChanged: (value) {
                       _checkPassword(_userPasswordController.text);
                     },
