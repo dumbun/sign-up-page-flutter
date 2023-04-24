@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -68,39 +67,6 @@ class _SignInScreenState extends State<SignInScreen> {
           _strength = 1;
         });
       }
-    }
-  }
-
-//// status bar widget
-  Widget buildStatusBar() {
-    if (_strength == 0.75) {
-      return const LinearProgressIndicator(
-        value: 0.75,
-        backgroundColor: Colors.transparent,
-        color: Colors.green,
-      );
-    } else if (_strength == 1) {
-      return const LinearProgressIndicator(
-        value: 1,
-        backgroundColor: Colors.transparent,
-        color: Colors.green,
-      );
-    } else if (_strength == 0.5) {
-      return const LinearProgressIndicator(
-        value: 0.5,
-        backgroundColor: Colors.transparent,
-        color: Colors.yellow,
-      );
-    } else if (_strength > 0.2 && _strength < 0.5) {
-      return const LinearProgressIndicator(
-        value: 0.2,
-        backgroundColor: Colors.transparent,
-        color: Colors.blue,
-      );
-    } else {
-      return const LinearProgressIndicator(
-        value: 0,
-      );
     }
   }
 
